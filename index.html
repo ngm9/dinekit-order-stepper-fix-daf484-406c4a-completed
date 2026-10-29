@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DineKit — Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="order">
+    <header class="order__header">
+        <h1 class="order__title">The Copper Pot</h1>
+        <p class="order__subtitle">Choose your dishes and quantities</p>
+    </header>
+
+    <ul class="menu" id="menu">
+        <li class="menu__row" data-dish-id="marg" data-price="9.50">
+            <span class="menu__name">Margherita Pizza</span>
+            <span class="menu__unit">$9.50</span>
+            <div class="stepper">
+                <button class="stepper__btn" data-action="decrement" aria-label="Decrease Margherita Pizza"><span class="icon">−</span></button>
+                <span class="stepper__qty" data-qty>0</span>
+                <button class="stepper__btn" data-action="increment" aria-label="Increase Margherita Pizza"><span class="icon">+</span></button>
+            </div>
+        </li>
+        <li class="menu__row" data-dish-id="carb" data-price="12.00">
+            <span class="menu__name">Spaghetti Carbonara</span>
+            <span class="menu__unit">$12.00</span>
+            <div class="stepper">
+                <button class="stepper__btn" data-action="decrement" aria-label="Decrease Spaghetti Carbonara"><span class="icon">−</span></button>
+                <span class="stepper__qty" data-qty>0</span>
+                <button class="stepper__btn" data-action="increment" aria-label="Increase Spaghetti Carbonara"><span class="icon">+</span></button>
+            </div>
+        </li>
+        <li class="menu__row" data-dish-id="salad" data-price="7.25">
+            <span class="menu__name">Garden Salad</span>
+            <span class="menu__unit">$7.25</span>
+            <div class="stepper">
+                <button class="stepper__btn" data-action="decrement" aria-label="Decrease Garden Salad"><span class="icon">−</span></button>
+                <span class="stepper__qty" data-qty>0</span>
+                <button class="stepper__btn" data-action="increment" aria-label="Increase Garden Salad"><span class="icon">+</span></button>
+            </div>
+        </li>
+        <li class="menu__row" data-dish-id="tira" data-price="6.00">
+            <span class="menu__name">Tiramisu</span>
+            <span class="menu__unit">$6.00</span>
+            <div class="stepper">
+                <button class="stepper__btn" data-action="decrement" aria-label="Decrease Tiramisu"><span class="icon">−</span></button>
+                <span class="stepper__qty" data-qty>0</span>
+                <button class="stepper__btn" data-action="increment" aria-label="Increase Tiramisu"><span class="icon">+</span></button>
+            </div>
+        </li>
+    </ul>
+
+    <footer class="order__footer">
+        <span class="order__total-label">Order Total</span>
+        <span class="order__total" id="orderTotal">$0.00</span>
+    </footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
